@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+    <div
+        class="rounded-2xl card w-[90%] mx-auto mt-[100px] mb-0 p-10 bg-gradient-to-r from-cyan-500 to-blue-500 text-white  max-w-96">
+        <div class="search flex items-center justify-center">
+            <input class="rounded-full p-3 text-black outline-none " type="text" placeholder="Enter the City"
+                spellcheck="true">
+            <button class=" button px-3 py-2 m-2 bg-white rounded-full ">
+                <span class="invert material-symbols-outlined cursor-pointer">
+                    search
+                </span>
+            </button>
+        </div>
+
+        <div class="error hidden text-4xl  font-bold mt-5">invalid city name</div>
+        <div class="cont  hidden">
+            <div class=" cursor-pointer flex flex-col justify-center items-center w-[90%]">
+                <img src="images/clear.png">
+                <h1 class="temp text-6xl font-bold self-center">22°C</h1>
+                <h2 class="city text-4xl  font-bold ">NEW YORK</h2>
+            </div>
+
+            <div class="weather flex mt-10 justify-between cursor-pointer">
+                <div class="left flex items-center">
+                    <img class="w-10 h-10" src="images/humidity.png" alt="">
+                    <div class=" ml-2">
+                        <h2 class="humidity">50%</h2>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="left flex items-center">
+                    <img class="w-10 h-10" src="images/wind.png" alt="">
+                    <div class=" ml-2">
+                        <h2 class="wind">50%</h2>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
